@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.controller.TelaPrincipalController" styleClass="main-container">
+    
+    <top>
+        <VBox spacing="5" styleClass="header">
+            <padding>
+                <Insets bottom="10.0" left="15.0" right="15.0" top="10.0"/>
+            </padding>
+            
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <Label text="Sistema de Gerenciamento de Parque" styleClass="app-title">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                </Label>
+                
+                <Region HBox.hgrow="ALWAYS" />
+                
+                <VBox alignment="CENTER_RIGHT">
+                    <Label fx:id="nomeClienteLabel" text="Nome do Cliente" styleClass="user-name">
+                        <font>
+                            <Font name="System Bold" size="14.0"/>
+                        </font>
+                    </Label>
+                    <Label fx:id="cpfClienteLabel" text="CPF: XXX.XXX.XXX-XX" styleClass="user-cpf" />
+                </VBox>
+            </HBox>
+        </VBox>
+    </top>
+    
+    <center>
+        <TabPane fx:id="tabPane" tabClosingPolicy="UNAVAILABLE">
+            <Tab fx:id="bilheteriaTab" text="Bilheteria" />
+            <Tab fx:id="atracoesTab" text="Atrações" />
+            <Tab fx:id="meusIngressosTab" text="Meus Ingressos" />
+        </TabPane>
+    </center>
+    
+    <bottom>
+        <HBox alignment="CENTER" styleClass="footer">
+            <padding>
+                <Insets bottom="5.0" left="10.0" right="10.0" top="5.0"/>
+            </padding>
+            <Label text="© 2023 Sistema de Gerenciamento de Parque - Todos os direitos reservados" />
+        </HBox>
+    </bottom>
+    
+</BorderPane> 

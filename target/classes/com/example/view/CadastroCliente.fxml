@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="15" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controller.CadastroClienteController" styleClass="cadastro-container">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label text="Cadastro de Cliente" styleClass="title-label">
+        <font>
+            <Font name="System Bold" size="18.0"/>
+        </font>
+    </Label>
+
+    <GridPane vgap="10" hgap="10" alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints minWidth="80" prefWidth="100" hgrow="SOMETIMES" />
+            <ColumnConstraints minWidth="200" prefWidth="250" hgrow="SOMETIMES" />
+        </columnConstraints>
+
+        <Label text="Nome:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="nomeField" promptText="Digite seu nome completo" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <Label text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="emailField" promptText="Digite seu email" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <Label text="Telefone:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField fx:id="telefoneField" promptText="(XX) XXXXX-XXXX" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+        <Label text="CPF:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <TextField fx:id="cpfField" promptText="XXX.XXX.XXX-XX" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    </GridPane>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="salvarButton" text="Salvar" onAction="#salvar" styleClass="primary-button"/>
+        <Button fx:id="cancelarButton" text="Cancelar" onAction="#cancelar" styleClass="secondary-button"/>
+    </HBox>
+</VBox> 

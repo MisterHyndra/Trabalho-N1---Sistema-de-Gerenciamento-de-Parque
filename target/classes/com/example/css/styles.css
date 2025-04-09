@@ -1,0 +1,152 @@
+/* Estilos gerais */
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-background-color: #f5f5f7;
+}
+
+/* Estilos para containers */
+.main-container {
+    -fx-background-color: white;
+}
+
+.content-container {
+    -fx-background-color: white;
+}
+
+.login-container {
+    -fx-background-color: white;
+}
+
+.cadastro-container {
+    -fx-background-color: white;
+}
+
+/* Estilos para cabeçalho e rodapé */
+.header {
+    -fx-background-color: #0066cc;
+    -fx-text-fill: white;
+}
+
+.app-title {
+    -fx-text-fill: white;
+}
+
+.user-name {
+    -fx-text-fill: white;
+}
+
+.user-cpf {
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}
+
+.footer {
+    -fx-background-color: #f0f0f0;
+    -fx-font-size: 11px;
+    -fx-text-fill: #666666;
+}
+
+/* Estilos para títulos */
+.title-label {
+    -fx-text-fill: #0066cc;
+}
+
+.subtitle-label {
+    -fx-text-fill: #666666;
+}
+
+.section-title {
+    -fx-text-fill: #0066cc;
+}
+
+.subsection-title {
+    -fx-text-fill: #333333;
+}
+
+.action-title {
+    -fx-text-fill: #0066cc;
+}
+
+/* Estilos para detalhes */
+.detail-label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #666666;
+}
+
+.detail-value {
+    -fx-text-fill: #333333;
+}
+
+.attraction-name {
+    -fx-text-fill: #0066cc;
+}
+
+/* Estilos para botões */
+.button {
+    -fx-background-radius: 5;
+    -fx-padding: 8 15 8 15;
+}
+
+.primary-button {
+    -fx-background-color: #0066cc;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.primary-button:hover {
+    -fx-background-color: #0055bb;
+}
+
+.secondary-button {
+    -fx-background-color: #f0f0f0;
+    -fx-text-fill: #333333;
+}
+
+.secondary-button:hover {
+    -fx-background-color: #e0e0e0;
+}
+
+/* Estilos para campos de texto */
+.text-field, .combo-box, .date-picker {
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-padding: 5;
+}
+
+/* Estilos para list views e table views */
+.list-view, .table-view {
+    -fx-background-color: white;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5;
+}
+
+.list-cell, .table-row-cell {
+    -fx-padding: 5;
+}
+
+.list-cell:filled:selected, .table-row-cell:filled:selected {
+    -fx-background-color: #0066cc;
+    -fx-text-fill: white;
+}
+
+/* Estilos para TabPane */
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #f0f0f0;
+}
+
+.tab-pane .tab {
+    -fx-background-color: #e0e0e0;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: white;
+}
+
+.tab-pane .tab .tab-label {
+    -fx-text-fill: #333333;
+}
+
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: #0066cc;
+    -fx-font-weight: bold;
+} 

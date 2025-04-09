@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controller.LoginController" styleClass="login-container">
+    <padding>
+        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0"/>
+    </padding>
+
+    <Label text="Sistema de Gerenciamento de Parque" styleClass="title-label">
+        <font>
+            <Font name="System Bold" size="24.0"/>
+        </font>
+    </Label>
+    
+    <Label text="Bem-vindo! Entre com seu CPF ou cadastre-se." styleClass="subtitle-label"/>
+    
+    <GridPane vgap="10" hgap="10" alignment="CENTER">
+        <Label text="CPF:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="cpfField" promptText="Digite seu CPF" GridPane.columnIndex="1" GridPane.rowIndex="0" prefWidth="250"/>
+    </GridPane>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="loginButton" text="Entrar" onAction="#login" styleClass="primary-button"/>
+        <Button fx:id="cadastrarButton" text="Cadastrar" onAction="#abrirTelaCadastro" styleClass="secondary-button"/>
+    </HBox>
+</VBox> 
